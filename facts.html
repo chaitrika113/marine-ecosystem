@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Life Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: aliceblue;
+        }
+        h1 {
+            text-align: center;
+        }
+        #facts-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        p {
+            font-size: 18px;
+            text-align: center;
+            max-width: 600px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+          /* Add the video background */
+          video.background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Keep the video in the background */
+            animation: videoBackground 30s infinite; /* Optional: to add some animation effects */
+        }
+
+        @keyframes videoBackground {
+            0% { opacity: 0.8; }
+            50% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="aquarium.mp4" type="video/mp4">
+        <!-- Add other video formats for compatibility -->
+        <source src="path_to_your_video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <div id="facts-container">
+        <h1>Marine Life Facts</h1>
+        <p>Ocean acidification occurs when excess carbon dioxide (CO₂) from the atmosphere is absorbed by the oceans, causing a decrease in pH levels. As CO₂ dissolves in seawater, it forms carbonic acid, which breaks down into hydrogen ions, increasing acidity. This change makes it harder for marine organisms like corals, mollusks, and plankton to form calcium carbonate shells and skeletons, weakening ecosystems such as coral reefs and disrupting the marine food web.</p>
+
+            <p>Ocean acidification is closely linked to climate change, as both are driven by rising CO₂ levels. Climate change leads to higher ocean temperatures, which, combined with acidification, further stresses marine life. These two factors together threaten biodiversity, as species at the base of the food web, such as plankton, face challenges in growth and reproduction, impacting species higher up in the food chain.</p>
+            
+    <p>To address these issues, reducing CO₂ emissions is critical, alongside efforts to protect and restore marine ecosystems. Mitigating both ocean acidification and climate change requires global action to decrease emissions, conserve marine habitats, and invest in research to better understand the full scope of their impacts. Effective strategies can help preserve marine biodiversity and ensure the sustainability of ocean resources.</p>
+        <button onclick="window.location.href='index.html';">Back to Menu</button>
+    </div>
+
+</body>
+</html>
